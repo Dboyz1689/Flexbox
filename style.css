@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 70%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.navbar{
+    background-color: rgb(79, 110, 214);
+    height: 50px;
+    color: white;
+    position: relative;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar button{
+    font-weight: bold;
+    padding: 0px 10px;
+    position: relative;
+    font-size: 1.5rem;
+    animation-name: h3;
+    animation-duration: 2s;
+    background-color: rgb(79, 110, 214);
+    border: none;
+    color: white;
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+
+.navbar button:hover{
+    background-color: white;
+    color: blue;
+}
+
+@keyframes h3 {
+    0% {left: -80%;}
+    100% {left: 0px;}
+    
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 150px;
+
+}
+
+.navbar li{
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.35s;
+}
+
+.navbar a:hover{
+    font-size: 20px;
+}
+
+.header{
+    background-color: rgb(0, 0, 197);
+    color: white;
+    min-height: 150px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header img{
+    margin: 40px 0px 40px 20px;
+    animation-name: img;
+    animation-duration: 4s;
+}
+
+@keyframes img {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+.text{
+    margin: 50px 20px 50px 0px;
+    animation-name: text;
+    animation-duration: 4s;
+    
+}
+
+@keyframes text {
+    0% {color: rgb(0, 0, 197);}
+    100% {color: white;}
+}
+
+.section{
+    background-color: rgb(31, 179, 224);
+    color: white;
+    min-height: 250px;
+    order: 2;
+}
+
+.section .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    margin: 20px 10px;
+    border: 3px solid white;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 197);
+    padding: 10px;
+    width: 33.3%;
+    position: relative;
+    transition-property: all;
+    transition-duration: 0.75s;
+    order: inherit;
+}
+
+.box:hover{
+    background-color: white; 
+    color: blue;
+    border: 3px solid blue;
+    padding: 20px 10px;
+}
+
+#box1{
+    animation-name: box1;
+    animation-duration: 2s;
+}
+
+@keyframes box1 {
+    0% {left: -100%; background-color: white; color: blue;}
+    100% {left: 0%;}
+}
+
+#box2{
+    animation-name: box2;
+    animation-duration: 1.5s;
+}
+
+@keyframes box2 {
+    0% {left: -100%; background-color: white; color: blue;}
+    100% {left: 0%;}
+}
+
+#box3{
+    animation-name: box3;
+    animation-duration: 1s;
+}
+
+@keyframes box3 {
+    0% {left: -100%; background-color: white; color: blue;}
+    100% {left: 0%;}
+}
+
+.box{
+    height: 100%;
+}
+
+.navb{
+    background-color: rgb(17, 43, 215);
+    height: 50px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+
+.navb:hover{
+    background-color: white;
+    color: blue;
+    .navbare{
+        background-color: white;
+        color: blue;
+    }
+}
+
+.navbare{
+    font-weight: bold;
+    padding: 0px 10px;
+    position: relative;
+    font-size: 1.5rem;
+    animation-name: h3;
+    animation-duration: 2s;
+    background-color: rgb(17, 43, 215);
+    border: none;
+    color: white;
+    height: 100%;
+    transition-property: all;
+    transition-duration: 0.75s;
+}
+
+.navbare:hover{
+    background-color: white;
+    color: blue;
+}
+
+.boxe{
+    margin-top: 5px;
+    border: 2px solid white;
+    background-color: rgb(0, 0, 197);
+    padding: 10px;
+    width: auto;
+    position: relative;
+    transition-property: all;
+    transition-duration: 0.75s;
+    color: white;
+}
+
+.boxe h3{
+    text-align: center;
+}
+
+.boxe:hover{
+    background-color: white; 
+    color: blue;
+    border: 3px solid blue;
+    padding: 20px 10px;
+}
+
+.aside{
+    width: 100%;
+}
+
+#aside{
+    display: flex;
+    left: -100%;
+    flex-direction: column;
+    position: fixed;
+    animation-duration: 0.5s;
+    height: 100%;
+    top: 0%;
+    width: 25%;
+    border: 3px solid white;
+    background-color: rgb(79, 110, 214);
+    order: 1;
+}
+
+@keyframes aside {
+    0%{left:-100%}
+    100%{left: 0%;}
+}
+
+@keyframes back {
+    0%{left:0%}
+    100%{left: -100%;}
+}
+
+
+@media (max-width:1000px) {
+    #aside{
+
+        width: 30%;
+    }
+}
+
+@media (max-width:800px) {
+    #aside{
+
+        width: 40%;
+    }
+}
+
+@media (max-width: 650px) {
+    #aside{
+        width: 50%;
+    }
+
+    .header .container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header img{
+        margin: 20px 0px 20px 20px;
+    }
+
+    .section .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section{
+        height: 100%;
+    }
+
+    .box{
+        width: auto;
+        margin: 10px;
+        padding: 15px;
+    }
+    .box:hover{
+        padding: 25px 15px;
+    }
+}
